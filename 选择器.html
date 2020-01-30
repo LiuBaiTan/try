@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #red{
+            color: rebeccapurple;
+        }
+        #green{
+            color: green;
+        }
+        .cls1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" id="red">
+        <label for="username" >UserName</label>:<input type="text" name="username" placeholder="name" id="username"><br>
+        password:<input type="password" name="password" placeholder="password"><br>
+        gander:<input type="radio" name="gander" value="male">male
+                <input type="radio" name="gander" value="female" checked>female
+                <br>
+        hobby:<input type="checkbox" name="bobby" value="shopping">shopping
+                <input type="checkbox" name="bobby" value="java">java
+                <input type="checkbox" name="bobby" value="game">game
+                <br>
+        photo:<input type="file" name="photo"><br>
+        隐藏域:<input type="hidden" name="id" value="aaa"><br>
+        取色器:<input type="color" name="color"><br>
+        生日:<input type="date" name="birthday"><br>
+        生日:<input type="datetime-local" name="birthday"><br>
+        邮箱:<input type="email" name="age"><br>
+        年龄:<input type="number" name="age"><br>
+        <br>
+        省份:<select>
+                <option>---请选择--</option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>重庆</option>
+                <option>四川</option>
+            </select><br>
+        自我描述:<textarea name="self" cols="30" role="5"></textarea>
+        <input type="submit" value="LoadOn"><br>
+        <input type="button" value="Button"><br>
+        <input type="image" src="1.jpg">
+    </form>
+    <p id="green">测试css选择器</p>
+    <p class="cls1">测试css选择器</p>
+</body>
+</html>
