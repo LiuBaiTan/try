@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+
+
+</head>
+<body>
+
+    <img id="img" src="img/1.jpg" width="1000px" height="800px">
+    <script>
+        /*
+        * 分析：
+        *   1.在页面上使用img标签展示图片
+        *   2.定义一个方法
+        *   3.定义一个定时器，每隔3秒调用方法一次
+        * */
+        var number=1;
+        function f() {
+            number++;
+            if (number > 6)
+                number = 1;
+            var img = document.getElementById("img");
+            img.src = "img/" + number +".jpg";
+        }
+        setInterval(f,3000);
+    </script>
+</body>
+</html>
